@@ -1,0 +1,28 @@
+{
+  "name": "ci-wxpay",
+  "version": "1.0.0",
+  "description": "CafeInit WxPay SKD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cafeinit/ci-wxpay.git"
+  },
+  "keywords": [
+    "CafeInit",
+    "Wechat",
+    "Pay"
+  ],
+  "author": "burning",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/cafeinit/ci-wxpay/issues"
+  },
+  "homepage": "https://github.com/cafeinit/ci-wxpay#readme",
+  "devDependencies": {
+    "request": "^2.81.0",
+    "xml2js": "^0.4.17"
+  }
+}
