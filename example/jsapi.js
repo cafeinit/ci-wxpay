@@ -40,4 +40,42 @@ let params = {
 wxPay.getBrandWCPayRequestParams(params, (err, result) => {
   console.log('wxPay.getBrandWCPayRequestParams.err', err)
   console.log('wxPay.getBrandWCPayRequestParams.result', result)
+
+  // // 同步方式
+  // res.render('wxpay/jsapi', { pay_params: result })
+  //
+  // // 异步方式
+  // res.json(result)
 })
+
+
+// // 客户端同步处理
+// <script>
+// WeixinJSBridge.invoke('getBrandWCPayRequest',
+//   <%-JSON.stringify(pay_params)%>,
+//   function (res) {
+//     if (res.err_msg == 'get_brand_wcpay_request:ok') {
+//       // success
+//     }
+//     else {
+//       // error
+//     }
+//   }
+// })
+// </script>
+//
+// // 客户端异步处理
+// <script>
+// getBrandWCPayRequestParams((err, params) {
+//   if (!err) {
+//     WeixinJSBridge.invoke('getBrandWCPayRequest', params, function (res) {
+//       if (res.err_msg == 'get_brand_wcpay_request:ok') {
+//         // success
+//       }
+//       else {
+//         // error
+//       }
+//     })
+//   }
+// })
+// </script>
